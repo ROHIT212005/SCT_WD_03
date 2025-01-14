@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.game-options button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #2196f3;
+    color: white;
+    transition: background 0.3s;
+}
+
+.game-options button:hover {
+    background: #1976d2;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 20px auto;
+    width: 300px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cell.taken {
+    pointer-events: none;
+    cursor: default;
+}
+
+.game-info {
+    margin-top: 20px;
+}
+
+#message {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#restart {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #f44336;
+    color: white;
+    transition: background 0.3s;
+}
+
+#restart:hover {
+    background: #d32f2f;
+}
